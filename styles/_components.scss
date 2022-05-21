@@ -1,0 +1,188 @@
+@import "base";
+
+//buttons
+.button {
+  display: inline-block;
+  padding: $md-padding $lg-padding;
+  border-radius: $sm-radius;
+}
+
+.button__primery {
+  color: $primery-color;
+  background: white;
+  border: 1px solid $primery-color;
+
+  &:hover {
+    color: white;
+    background: $primery-color;
+    box-shadow: 4px 4px 2px $sm-shadow;
+    transition: $animation;
+  }
+}
+
+.button__label {
+  font-weight: $font-medium;
+  font-size: $sm-text;
+}
+
+.button__secondary {
+  color: white;
+  border: 1px solid white;
+
+  &:hover {
+    background: $secondary-color;
+    border: 1px solid $secondary-color;
+    transition: $animation;
+  }
+}
+
+.text__link {
+  color: $primery-color;
+}
+
+//logo
+.a__logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: $full-radius;
+  font-size: 24px;
+  color: white;
+  font-weight: $font-light;
+  transition: .4s ease;
+}
+
+.logo__primery {
+  background: $black-color;
+
+  &:hover {
+    background: white;
+    transform: translatey(0px);
+    animation: $float-fast;
+    background: $primery-color;
+    transition: $animation;
+  }
+}
+
+.logo__secondary {
+  border: 1px solid white;
+
+  &:hover {
+    background: white;
+    transform: translatey(0px);
+    animation: $float-fast;
+    background: $primery-color;
+    transition: $animation;
+  }
+}
+
+
+//item__component
+.item__section {
+  width: 100%;
+  max-width: 380px;
+  border-radius: $lg-radius;
+  box-shadow: 0 0 1rem $sm-shadow;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: $lg-padding;
+  background: white;
+
+  .item__description, .item__link {
+    width: 80%;
+    margin-bottom: $lg-padding;
+  }
+
+  .item__icon {
+    width: 160px;
+    height: 160px;
+    margin-bottom: $md-padding;
+    border-radius: $full-radius;
+  }
+}
+
+//slider__components
+.prev-slide,
+.next-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  background: white;
+  color: $primery-color;
+  box-shadow: 0 0 2px $sm-shadow;
+}
+
+.prev-slide {
+  border-radius: $sm-radius 0 0 $sm-radius;
+}
+
+.next-slide {
+  border-radius: 0 $sm-radius $sm-radius 0;
+}
+
+.prev-slide:hover,
+.next-slide:hover {
+  background: $primery-color;
+  color: white;
+  box-shadow: 0 0 8px $sm-shadow;
+  transition: $animation;
+}
+
+//typography__components
+h1 {
+  font-size: $title-text;
+  font-weight: $font-light;
+  color: $black-color;
+  margin-bottom: $lg-padding;
+
+  &::after {
+    content: ".";
+    color: $secondary-color;
+  }
+}
+
+h2 {
+  font-size: $subtitle-text;
+  font-weight: $font-light;
+  color: $black-color;
+  margin-bottom: $lg-padding;
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: $heading-next;
+  font-weight: $font-light;
+  color: $black-color;
+  margin-bottom: $lg-padding;
+  line-height: 1.6;
+}
+
+p {
+  font-size: $basic-text;
+  color: $grey-color;
+  line-height: 1.8;
+}
+
+.download__title {
+  font-weight: $font-bold;
+  margin-bottom: $lg-padding;
+  color: $black-color;
+}
+
+input {
+  width: 100%;
+  padding: $md-padding;
+  border: none;
+  color: $grey-color;
+  font-size: $sm-text;
+  border-radius: $sm-radius;
+  margin-right: $md-padding;
+}

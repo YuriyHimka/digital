@@ -1,0 +1,93 @@
+//variables__color
+$font-stuck: 'Montserrat', sans-serif;
+$primery-color: rgba(119, 139, 235,1.0);
+$secondary-color: rgba(255, 192, 72,1.0);
+$black-color: rgba(30, 39, 46,1.0);
+$grey-color: rgba(75, 101, 132,1.0);
+$bg-color: rgba(119, 139, 235,.1);
+
+
+//variables__margin/padding
+$md-padding: 16px;
+$lg-padding: 24px;
+$huge-padding: 4rem;
+
+
+//variable__item
+$sm-radius: 4px;
+$lg-radius: 16px;
+$full-radius: 50%;
+
+
+//variables__shadow
+$sm-shadow: rgba(119, 139, 235, .3);
+
+
+//variables__animation
+$animation: .4s;
+
+
+//variables__typography
+$sm-text: .9rem;
+$basic-text: 1rem;
+$heading-next: 1.4rem;
+$subtitle-text: 2rem;
+$title-text: 3rem;
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 600;
+
+
+//basic__styles
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $font-stuck;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.purple__text__color {
+  color: $primery-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+//animation--float
+$float-fast: float 2s ease-in-out infinite;
+$float-slow: float 4s ease-in-out infinite;
+$arrow-fast: arrow 2s ease infinite;
+
+@keyframes arrow {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-16px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-16px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}

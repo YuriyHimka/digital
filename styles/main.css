@@ -1,0 +1,821 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+@import url("https://css.gg/css");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.purple__text__color {
+  color: #778beb;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-16px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-16px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.purple__text__color {
+  color: #778beb;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-16px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-16px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+.button {
+  display: inline-block;
+  padding: 16px 24px;
+  border-radius: 4px;
+}
+
+.button__primery {
+  color: #778beb;
+  background: white;
+  border: 1px solid #778beb;
+}
+.button__primery:hover {
+  color: white;
+  background: #778beb;
+  box-shadow: 4px 4px 2px rgba(119, 139, 235, 0.3);
+  transition: 0.4s;
+}
+
+.button__label {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.button__secondary {
+  color: white;
+  border: 1px solid white;
+}
+.button__secondary:hover {
+  background: #ffc048;
+  border: 1px solid #ffc048;
+  transition: 0.4s;
+}
+
+.text__link {
+  color: #778beb;
+}
+
+.a__logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: white;
+  font-weight: 300;
+  transition: 0.4s ease;
+}
+
+.logo__primery {
+  background: #1e272e;
+}
+.logo__primery:hover {
+  background: white;
+  transform: translatey(0px);
+  animation: float 2s ease-in-out infinite;
+  background: #778beb;
+  transition: 0.4s;
+}
+
+.logo__secondary {
+  border: 1px solid white;
+}
+.logo__secondary:hover {
+  background: white;
+  transform: translatey(0px);
+  animation: float 2s ease-in-out infinite;
+  background: #778beb;
+  transition: 0.4s;
+}
+
+.item__section {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 16px;
+  box-shadow: 0 0 1rem rgba(119, 139, 235, 0.3);
+  margin-bottom: 3rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 24px;
+  background: white;
+}
+.item__section .item__description, .item__section .item__link {
+  width: 80%;
+  margin-bottom: 24px;
+}
+.item__section .item__icon {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 16px;
+  border-radius: 50%;
+}
+
+.prev-slide,
+.next-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  background: white;
+  color: #778beb;
+  box-shadow: 0 0 2px rgba(119, 139, 235, 0.3);
+}
+
+.prev-slide {
+  border-radius: 4px 0 0 4px;
+}
+
+.next-slide {
+  border-radius: 0 4px 4px 0;
+}
+
+.prev-slide:hover,
+.next-slide:hover {
+  background: #778beb;
+  color: white;
+  box-shadow: 0 0 8px rgba(119, 139, 235, 0.3);
+  transition: 0.4s;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #1e272e;
+  margin-bottom: 24px;
+}
+h1::after {
+  content: ".";
+  color: #ffc048;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #1e272e;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #1e272e;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+p {
+  font-size: 1rem;
+  color: #4b6584;
+  line-height: 1.8;
+}
+
+.download__title {
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #1e272e;
+}
+
+input {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  color: #4b6584;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  margin-right: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.purple__text__color {
+  color: #778beb;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-16px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-16px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+.viewport__section {
+  width: 100%;
+  height: 100vh;
+}
+
+.content__section {
+  width: 100%;
+  max-width: 960px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.section {
+  display: flex;
+  position: relative;
+}
+
+.work__section {
+  width: 100%;
+  margin-top: 4rem;
+  padding: 4rem 0;
+}
+
+.col__left,
+.col__right {
+  position: relative;
+  flex: 1;
+}
+
+.viewport__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 24px 0;
+}
+
+.navigation__items {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 24px 0;
+}
+.navigation__items .navigation__button a {
+  margin-left: 24px;
+}
+.navigation__items .navigation__link a {
+  position: relative;
+  margin-left: 1rem;
+  padding: 16px;
+  color: #1e272e;
+  font-size: 0.9rem;
+  transition: 0.4s;
+}
+.navigation__items .navigation__link a:hover {
+  color: #778beb;
+  transition: 0.4s;
+}
+.navigation__items .navigation__link a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0;
+  content: ".";
+  color: transparent;
+  background: #778beb;
+  height: 2px;
+  border-radius: 1px;
+}
+.navigation__items .navigation__link a:hover::after {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.viewport__description {
+  border-bottom: 1px solid rgba(119, 139, 235, 0.3);
+  margin-top: 16%;
+}
+.viewport__description .description__text {
+  margin-bottom: 4rem;
+}
+.viewport__description .inline__button {
+  display: inline;
+}
+
+.col__right .first__app {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  background: white;
+  border: 8px solid #778beb;
+  transform: translatey(0px);
+  animation: float 2s ease-in-out infinite;
+}
+
+.col__right .second__app {
+  position: absolute;
+  right: -24%;
+  width: 240px;
+  height: 240px;
+  background: url("https://cdn.pixabay.com/photo/2015/09/17/17/25/code-944499_1280.jpg");
+  border: 8px solid white;
+  border-radius: 50%;
+  background-size: cover;
+  box-shadow: 0 2px 8px rgba(119, 139, 235, 0.3);
+  transform: translatey(0px);
+  animation: float 4s ease-in-out infinite;
+}
+
+.about__section .col__right {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-end;
+}
+
+.about__section {
+  margin-top: 4rem;
+}
+.about__section .about__title {
+  width: 72%;
+}
+.about__section .col__left .item__section {
+  margin-top: 4rem;
+  margin-left: 4rem;
+}
+.about__section .receive__icon {
+  background: url("https://freeui.design/wp-content/uploads/2018/07/Showcase-Illustration-freeui-cover-1200x900.jpg");
+  background-size: cover;
+}
+.about__section .send__icon {
+  background: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/55a27373859093.5ea2b801a2781.png");
+  background-size: cover;
+}
+.about__section .buy__icon {
+  background: url("https://img.freepik.com/free-vector/people-putting-puzzle-pieces-together_52683-28610.jpg?size=626&ext=jpg&ga=GA1.2.1006591001.1641427200");
+  background-size: cover;
+}
+
+.borders__items {
+  position: relative;
+}
+.borders__items .border {
+  width: 160px;
+  height: 160px;
+  border: 4px solid #ffc048;
+  border-radius: 16px;
+}
+.borders__items .border__second {
+  position: absolute;
+  bottom: -32%;
+  right: -32%;
+}
+.borders__items .border__third {
+  position: absolute;
+  top: 16%;
+  left: -32%;
+}
+
+.first__borders__section {
+  position: absolute;
+  top: 4%;
+  right: -28%;
+  animation: float 2s ease-in-out infinite;
+  z-index: -99;
+}
+.first__borders__section .border {
+  border: 4px solid #778beb;
+}
+
+.second__borders__section {
+  position: absolute;
+  bottom: 3%;
+  left: -25%;
+  animation: float 2s ease-in-out infinite;
+  z-index: -99;
+}
+.second__borders__section .border {
+  border: 4px solid #ffc048;
+}
+
+.dots {
+  width: 160px;
+  height: 160px;
+  background: url("/dots.svg");
+  background-size: cover;
+  z-index: -99;
+}
+
+.col__left .dots {
+  position: absolute;
+  top: 36%;
+  animation: float 4s ease-in-out infinite;
+}
+
+.col__right .second__dot {
+  position: absolute;
+  right: -16%;
+  top: -8%;
+  animation: float 4s ease-in-out infinite;
+}
+
+.col__right .third__dot {
+  position: absolute;
+  bottom: -4%;
+  right: -16%;
+  animation: float 4s ease-in-out infinite;
+}
+
+.text__link {
+  display: flex;
+  align-items: center;
+}
+.text__link .gg-arrow-right {
+  margin-left: 16px;
+  display: inline-block;
+}
+.text__link .gg-arrow-right:hover {
+  animation: arrow 2s ease infinite;
+}
+
+.work__section {
+  background: rgba(119, 139, 235, 0.1);
+}
+.work__section .work__items {
+  padding: 4rem 0;
+  display: flex;
+}
+
+.work__item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  flex: 1;
+  padding: 0 24px;
+}
+
+.work__item h3,
+.work__item p {
+  text-align: center;
+  width: 100%;
+}
+
+.work__icons {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+
+.account__icon {
+  background: url("https://img.freepik.com/free-vector/recruit-agent-analyzing-candidates_74855-4565.jpg");
+  background-size: cover;
+}
+
+.authorization__icon {
+  background: url("https://i.pinimg.com/originals/7a/bb/a6/7abba6a7e7c4ee0da3e0881125b38c79.png");
+  background-size: cover;
+}
+
+.enjoy__icon {
+  background: url("https://cdn.dribbble.com/users/5157422/screenshots/11316812/9._work_from_home_4x.png");
+  background-size: cover;
+}
+
+.carousel {
+  position: relative;
+}
+
+.section__title {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  padding-top: 4rem;
+}
+
+.slides {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 320px;
+  margin: 4rem 0;
+}
+
+.slide-container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.carousel__input:checked ~ .slide-container {
+  opacity: 1;
+  transform: scale(1);
+  transition: 0.4s;
+}
+
+.name {
+  color: #1e272e;
+  font-weight: 500;
+  margin-top: 24px;
+}
+
+.feedback__bg {
+  width: 100%;
+  height: 320px;
+  background: rgba(119, 139, 235, 0.1);
+}
+
+.feedback__content {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+  margin-left: 4rem;
+}
+.feedback__content .feedback__section {
+  width: 100%;
+  max-width: 420px;
+}
+
+.carousel-controls {
+  position: absolute;
+  bottom: -6%;
+  right: 40%;
+  display: flex;
+}
+
+.carousel__input {
+  display: none;
+  position: absolute;
+  opacity: 0;
+}
+
+.img-1 {
+  position: absolute;
+  left: 24%;
+  bottom: 0;
+  width: 320px;
+  height: 130%;
+  background: url("/girl.png");
+  background-size: cover;
+}
+
+.fourth__dot {
+  position: absolute;
+  top: 32%;
+  right: 0;
+  animation: float 4s ease-in-out infinite;
+}
+
+.download {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+}
+.download .download__description {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 4rem;
+  text-align: center;
+}
+.download .download__text {
+  margin-bottom: 4rem;
+}
+.download .mobile {
+  display: flex;
+  justify-content: center;
+  padding-left: 24px;
+}
+.download .mobile__app {
+  width: 300px;
+  height: 420px;
+  background: url("https://cdn.pixabay.com/photo/2016/09/20/11/27/phone-1682317_1280.png");
+  background-size: cover;
+  animation: float 2s ease-in-out infinite;
+}
+
+footer {
+  background: #778beb;
+}
+footer .footer__navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+footer .footer__navigation .links, footer .footer__navigation .logo__section, footer .footer__navigation .email__section {
+  flex: 1;
+}
+footer .footer__navigation .email__section {
+  flex: 2;
+}
+footer .footer__copyright {
+  display: flex;
+  padding: 24px 4rem;
+  color: white;
+}
+footer .footer__copyright .copyright__text {
+  flex: 1;
+}
+footer .footer__copyright .copyright__social {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  color: white;
+}
+footer .footer__copyright .copyright__social i {
+  margin-right: 24px;
+}
+footer .footer__copyright .copyright__social i:hover {
+  cursor: pointer;
+  color: #ffc048;
+  transition: 0.4s;
+}
+
+.footer__title {
+  font-size: 1rem;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.footer__layout .footer__link {
+  position: relative;
+  display: block;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: white;
+  line-height: 2;
+}
+.footer__layout .footer__link:hover {
+  text-decoration: underline;
+  transition: 0.4s;
+}
+
+.email__form {
+  display: flex;
+}
+
+.email__section label {
+  display: block;
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 600px) {
+  .navigation__link,
+.app__preview {
+    display: none;
+  }
+
+  .about__section {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 24px;
+  }
+  .about__section .col__left .item__section {
+    margin-left: 0;
+  }
+
+  .item__section {
+    max-width: 100%;
+  }
+
+  .work__items {
+    padding: 4rem 0;
+    display: flex;
+    flex-flow: column;
+  }
+  .work__items .work__item {
+    margin-bottom: 4rem;
+  }
+
+  .mobile {
+    padding-left: 0;
+  }
+
+  .slides .section,
+.download,
+.footer__navigation {
+    flex-flow: column;
+  }
+
+  .footer__navigation {
+    text-align: center;
+  }
+  .footer__navigation .logo__section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .download {
+    padding: 0 0;
+  }
+
+  .links, .logo__section {
+    margin-bottom: 4rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
